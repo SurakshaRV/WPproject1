@@ -1,0 +1,73 @@
+
+<html>
+<head><title>WPproject1</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<meta name="google-signin-client_id" content="337037970706-5jnuliokia3g77gj535mlla2p97lples.apps.googleusercontent.com">
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="C:\xampp\htdocs\script.js"></script>
+<style>
+.icon{dispay:block; margin-left:auto; margin-right:auto;}
+.g-signin2{
+float:center;
+margin-left:500px;
+margin-top:200px;}
+.data{display:none;}
+</style>
+</head>
+<body background="C:\xampp\htdocs\bg.jpg" width="1800" height="1200" >
+<div style="background-image:url('http://localhost:8080/bg3.jpg'); font-family:sans-serif; background-repeat:no-repeat;background-size:2200px 1500px; ">
+<table cellspacing="30" >
+<tr>
+<th><div style="background-image:url('http://localhost:8080/logo1.png');background-size:100%;float:left;"><span><img  width="150" height="150"/></span></div><br/></th>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<th><span><h1>BMS COLLEGE  OF ENGINEERING</h1></span><br/>(Autonomous Institute under VTU)</th></tr>
+</table>
+<hr/>
+<p><h3>Home&nbsp; &nbsp;| <a href="">About us</a> &nbsp;&nbsp; | <a href="">Contact us</a>
+</h3></p>
+<p><h1 align="center" ><br/>
+<div style="font-style:bold; font-size:62;"class="name">CIE MANAGEMENT SYSTEM</div></h1></p><br/>
+ <p align="center">
+<table border="1" style="padding:100px; spacing:70px; background:#000; color:#fff; font-color:white; font-size:30;">
+<tr>
+<td> 
+<h2 align="center">LOGIN FORM...</h2><br/><br/>
+<div align="center" style="width:320px; height:420px;">       
+<form>
+<center>
+<div style="background-image:url('http://localhost:8080/ic.jpg'); dispay:block; margin-left:auto; margin-right:auto; width:100px; height:100px; border-radius:75%; background-size:100%;">
+  <img class="icon" size="100%" style="dispay:block; margin-left:auto; margin-right:auto;"/>
+  </div>
+  </center>
+  <br/><br/>
+  <div style="width:100%;">
+<p>Username:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="username" placeholder="Enter username" name="username"><br/></p>
+<p>Password:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" id="password" placeholder="Enter password" name="password"><br/></p>
+</div>
+<div id="lower"><p>
+<input type="checkbox">Keep me logged in<br/>
+</div>
+</form>
+</div>
+<p align="center">
+<button class="button" style=" text-align:center; font-color:black; background-color:red;" onclick="document.getElementById('id1').style.display='block'">LOGIN</button></p>
+<center><a href="#">Forgot password?</a></center><br/>
+<center><p align="center"><div align="center" class="g-signin2" data-OnSuccess="onSignIn"></div></p></center>
+<div class="data">
+<p>Profile Details</p>
+<img id="pic" class="img-circle" width="100" height="100"/>
+<p>Email Address</p>
+<p id="email" class="alert alert-danger"></p> 
+<button onclick="SignOut()" class="btn btn-danger">SignOut</button>
+</div>
+</td>
+</tr>
+</form>
+</table>
+</p>
+</div>
+</body>
+</html>
